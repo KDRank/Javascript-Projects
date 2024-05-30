@@ -6,8 +6,13 @@
     </head>
 
     <body>
+        <br>
         <button onclick="My_First_Function()" id="Button_Text">
         Click Me!
         </button>
+        <br>
+        <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+        <p id="demo"></p>
+        <button onclick="this.innerHTML = Date()">The time is?</button>
     </body>
 </html>

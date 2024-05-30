@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="JS/main.js"></script>
+    </head>
+    <!--Input Form for Multiplying Two Numbers-->
+    <form id="frm1" action="index.html">
+        <table width="350px" height="125px" border="2px">
+            <tr>
+                <th colspan="2">Number Multiplier</th>
+            </tr>
+            <tr>
+                <!--Input for first number-->
+                <td>Number 1</td>
+                <td>
+                    <input type="number" id="num1" placeholder=""></td>
+            </tr>
+            <tr>
+                <!--Input for second number-->
+                <td>Number 2</td>
+                <td>
+                    <input type="number" id="num2" placeholder=""></td>
+            </tr>
+            <tr>
+                <!--Output displayed for multiplied numbers-->
+                <td>Mutiplied Total:</td>
+                <td>
+                    <p id="total"></p>
+                </td>
+            </tr>
+        </table>
+        <!--Click button to perform multiplication-->
+        <input type="button" onclick="CalcFunc()" value="Multiply!">
+    </form>
+    <br>
+    <!--Click text to execute MyFunction-->
+    <p id="Concatenate" onclick="MyFunction()">Click Here!</p>
+
+</html>
