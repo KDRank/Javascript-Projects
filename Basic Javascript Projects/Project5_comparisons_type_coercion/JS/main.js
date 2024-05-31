@@ -51,6 +51,9 @@ document.write("<br>"); //Line break
 document.write(5 > 10 || 10 > 20); //Logic Operators (OR) - Return False (Neither True)
 document.write("<br>"); //Line break
 
+document.write(Bigger = (5 > 1) ? "Left number is bigger":"Right number is bigger");
+document.write("<br>"); //Line break
+
 function examp_Function1(){ //Displays NaN
     document.getElementById("Test1").innerHTML = 0/0;
 }
