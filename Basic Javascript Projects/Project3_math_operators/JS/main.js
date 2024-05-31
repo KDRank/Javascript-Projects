@@ -36,8 +36,10 @@ Z--;
 document.write("<br>5.25 decreased by 1 is " + Z); //Decrement Operator
 window.alert(Math.random()); //Displays alert with random number between 0 and 1
 window.alert(Math.random() * 100); //Displays alert with random number between 0 and 100
+
 let Q = Math.PI;//Returns PI
 document.write("<br>Approximate value of PI is " + Q);
+
 let W = Math.sqrt(16); //Returns square root
 document.write("<br>Square root of 16 is " + W)
 document.write("<br>Random number between 0 - 50 is " + Math.random() * 50);//Displays random number between 0 and 50
