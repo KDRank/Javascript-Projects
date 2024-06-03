@@ -75,6 +75,7 @@ function Add_numbers_3() {
     console.log(20 + Y + "<br>");
 }
 function Add_numbers_4() {
+    var Y = 20; //Removing this variable will return 'Y is not defined' error in console
     console.log(Y + 100);
 }
 Add_numbers_3();
