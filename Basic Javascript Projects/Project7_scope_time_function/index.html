@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="JS/main.js"></script>
+        <title>Project7</title>
+    </head>
+    <body>
+        <!--Displays greeting on click if time before 6:00PM-->
+        <p id="Greeting" onclick="get_Date()">Click Here.</p>
+        <br>
+        <!--If/Else text display for before/after 9:00AM-->
+        <p id="DayTime" onclick="get_Time()">Now Click Here!</p>
+        <br>
+        <!--Are you old enough to vote?-->
+        <p>Write your age:</p>
+        <input id="Age1" value="" />
+        <p id="How_old_are_you?"></p>
+        <button onclick="Age_Function()">Click Here for age</button>
+        <br>
+        <!--Are you old enough to see the movie?-->
+        <p>Enter your age to see if you're old enough to watch the R-Rated movie:</p>
+        <input id="MovieAge" value="" />
+        <p id="are_you_movie"></p>
+        <button onclick="Movie_Function()">Click here to see!</button>
+        <br>
+        <!--ELSE IF Statement-->
+        <p id="Time_of_day"></p>
+        <button onclick="Time_function()">Click here to get the time of day</button>
+    </body>
+</html>
