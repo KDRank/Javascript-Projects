@@ -65,6 +65,26 @@ function placeXOrO(squareNumber) {
         }
     }
 }
+//This function takes a string parameter of the path you set earlier for placement sound(./media/place.mp3')
+function audio(audioURL) {
+    //We create a new audio object and we pass the path as a parameter
+    let audio = new Audio(audioURL);
+    //Play method plays our audio sound
+    audio.play();
+}
+
+//This function resets the game in the event of a tie or a win
+function resetGame() {
+    //This for loop iterates through each HTML square element
+    for (let i = 0; i < 9; i++) {
+        //This variable gets the HTML element i
+        let square = document.getElementById(String(i));
+        //This removes our elements in backgroundImage
+        square.style.backgroundImage = '';
+    }
+    //this resets our array so it is empty and we can start over
+    selectedSquares = [];
+}
 //This function parses the selectedSquares array to search for win conditions
 //drawLine() function is called to draw a line on the screen if the condition is met
 function checkWinConditions() {
@@ -103,7 +123,7 @@ function checkWinConditions() {
     //This condition checks for a tie. If none of the above conditions are met and 9 squares are selected the code executes
     else if (selectedSquares.length >= 9) {
         //This function plays the tie game sound
-        audio('./Media/tie.mp3');
+        audio('./Media/wow.mp3');
         //This function sets a .3 second timer before the resetGame is called
         setTimeout(function () { resetGame(); }, 500);
     }
@@ -124,14 +144,6 @@ function disableClick() {
     body.style.pointerEvents = 'none';
     //This makes our body clickable again after 1 second
     setTimeout(function () { body.style.pointerEvents = 'auto';}, 1000);
-}
-
-//This function takes a string parameter of the path you set earlier for placement sound(./media/place.mp3')
-function audio(audioURL) {
-    //We create a new audio object and we pass the path as a parameter
-    let audio = new Audio(audioURL);
-    //Play method plays our audio sound
-    audio.play();
 }
 
 //This function utilizes HTML canvas to draw win lines
