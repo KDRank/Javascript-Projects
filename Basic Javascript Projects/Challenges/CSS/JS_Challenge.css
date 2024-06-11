@@ -1,0 +1,117 @@
+/*Black background page*/
+html {
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+/*Body encapsulated in yellow color*/
+body {
+    background-color: lightyellow;
+    opacity: 1;
+    transition: 1s opacity;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+    animation: zoominoutsinglefeatured 10s forwards;
+}
+/*Fade effect on body*/
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+/*Open button styles*/
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 240px;
+    animation: mymove 3s;
+}
+
+.popup {
+    display: none;
+    position:fixed;
+    bottom: 0;
+    right: 0px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/*Form Styles and actions*/
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container input[type=text] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container .btn {
+    background-color: #04aa6d;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-container .cancel {
+    background-color: red;
+  }
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 10px;}
+}
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+/*Slideshow*/
+#slideshow {
+    margin: 80px auto;
+    position: relative;
+    width: 300px;
+    height: 169px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
